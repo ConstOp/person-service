@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -18,6 +20,7 @@ import lombok.Setter;
 @Getter
 @EqualsAndHashCode(of = "id")
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Person implements Serializable {
 	private static final long serialVersionUID = -7307107779894340657L;
 
