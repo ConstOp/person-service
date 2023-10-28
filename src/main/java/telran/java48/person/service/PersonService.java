@@ -25,6 +25,6 @@ public interface PersonService {
 
 	Iterable<PersonDto> findAllChildren();
 
-	Iterable<PersonDto> findEmployeesBySalary(Integer minSalary, Integer maxSalary);
+	Iterable<PersonDto> findEmployeeBySalary(int min, int max);
 
 }
